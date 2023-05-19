@@ -1,10 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Homepage from "./Pages/home";
 
 function App() {
   return (
     <div className="App">
-      <h2>This is a test website</h2>
+      <Homepage></Homepage>
     </div>
   );
 }
