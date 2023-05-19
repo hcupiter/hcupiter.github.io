@@ -12,12 +12,14 @@ export default function Homepage() {
   }
 
   return (
-    <div className="justify-content-center">
-      <h2 class="text-light fw-bold">This is Home Page</h2>
+    <div className="justify-content-center mt-3">
+      <h2 class="fw-bold">This is Home Page</h2>
       <button class="btn btn-primary mt-3" onClick={handleClick}>
         Click me
       </button>
-      {showButton && <h2 class="fw-bold fs-1 text-danger mt-3">Fuck you</h2>}
+      {showButton && (
+        <h2 class="fw-bold fs-1 text-danger mt-3">Fuck you Bitch</h2>
+      )}
     </div>
   );
 }
