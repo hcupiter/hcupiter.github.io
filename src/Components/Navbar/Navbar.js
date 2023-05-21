@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar({ children }) {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-primary pe-5 ps-5">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-primary">
+        <div className="container-fluid">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -12,27 +14,18 @@ export default function Navbar({ children }) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  className="nav-link active text-white fw-bold"
+                  aria-current="page"
+                >
+                  Back to Home
+                </Link>
               </li>
             </ul>
           </div>
