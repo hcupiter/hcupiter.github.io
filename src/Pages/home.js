@@ -10,6 +10,7 @@ import KpopZstation from "../Assets/KPOPZstation.png";
 import FigmaLogo from "../Assets/figma-logo-1.png";
 
 import { Link } from "react-router-dom";
+import Footer from "../Components/Navbar/Footer";
 
 export default function Homepage() {
   // const imageStyle = {
@@ -76,13 +77,9 @@ export default function Homepage() {
               <div className="card-body">
                 <h5 className="card-title">KPOPZstation</h5>
                 <p className="card-text">
-                  In this project i make an application named KpopZtation is a
-                  K-pop album shop in Indonesia. To expand its business,
-                  KpopZtation wants to create a website for their shop. In that
-                  website, people can find information about the K-pop album and
-                  order it. This website enables the customers to know what is
-                  inside KpopZtation. I use ASP.NET Web application and applying
-                  the concept of pattern software design here
+                  In this project i make an application named KpopZtation. I use
+                  ASP.NET Web Application Framework while applying the concept
+                  of Pattern Software Design
                 </p>
                 <Link to="/kpopzstation" className="btn btn-outline-primary">
                   View More
@@ -112,7 +109,7 @@ export default function Homepage() {
                   database and normalize the database so that the data produced
                   was not redundant.
                 </p>
-                <Link to="/database" className="btn btn-outline-primary">
+                <Link to="/vo-Greens" className="btn btn-outline-primary">
                   View More
                 </Link>
               </div>
@@ -164,10 +161,7 @@ export default function Homepage() {
                   Here you can see all the user interface designs I've created
                   in Figma.
                 </p>
-                <Link
-                  to="/computer-network"
-                  className="btn btn-outline-primary"
-                >
+                <Link to="/figma-design" className="btn btn-outline-primary">
                   View More
                 </Link>
               </div>
@@ -179,23 +173,7 @@ export default function Homepage() {
         </div>
       </div>
 
-      <footer
-        className="bg-primary mt-5 ps-5 pe-5 d-flex align-items-center "
-        style={{ width: "100%", height: "10rem" }}
-      >
-        <div className="d-flex align-items-center">
-          <i className="bi bi-envelope-fill text-light me-4 fs-4"></i>
-          <div className="text-light d-flex flex-column align-items-start">
-            <div className="fs-5 fw-medium">Contact me at</div>
-            <a
-              href="mailto: hans.cupiterson@binus.ac.id"
-              className="text-light fst-italic text-decoration-none"
-            >
-              hans.cupiterson@binus.ac.id
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }

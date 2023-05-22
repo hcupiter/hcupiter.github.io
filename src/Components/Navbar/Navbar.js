@@ -18,7 +18,8 @@ export default function Navbar({ children }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li className="nav-item d-flex align-items-center ms-4 ">
+                <i class="bi bi-arrow-left text-light"></i>
                 <Link
                   to="/"
                   className="nav-link active text-white fw-bold"
@@ -27,11 +28,50 @@ export default function Navbar({ children }) {
                   Back to Home
                 </Link>
               </li>
+
+              <li className="nav-item">
+                <div className="dropdown">
+                  <button
+                    className="btn btn-primary dropdown-toggle ms-4"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    See Other Projects
+                  </button>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link to="/hyperspace" className="dropdown-item">
+                        HyperSpace
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/kpopzstation" className="dropdown-item">
+                        KPOPZstation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/vo-Greens" className="dropdown-item">
+                        VOGreeens
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/computer-network" className="dropdown-item">
+                        Computer Network
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/figma-design" className="dropdown-item">
+                        Figma Design
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div>{children}</div>
     </div>
   );
 }
