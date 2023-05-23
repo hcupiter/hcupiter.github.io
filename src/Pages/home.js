@@ -100,14 +100,10 @@ export default function Homepage() {
                 style={{ height: "15rem", objectFit: "cover" }}
               ></img>
               <div className="card-body">
-                <h5 className="card-title">
-                  Database Analysis and Design in Workshops Application
-                </h5>
+                <h5 className="card-title">VOGreeens</h5>
                 <p className="card-text">
-                  Creation of a database schema for the workshop application. In
-                  this project, my group and I worked together to create a
-                  database and normalize the database so that the data produced
-                  was not redundant.
+                  In this project. I make a design and website for VOGreeens
+                  restaurant. Here i use HTML,CSS, and Javascript.
                 </p>
                 <Link to="/vo-Greens" className="btn btn-outline-primary">
                   View More

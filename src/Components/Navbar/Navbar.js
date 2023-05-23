@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ children }) {
   return (
-    <div>
+    <div className="position-static">
       <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
           <button

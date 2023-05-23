@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Navbar/Footer";
+
 import HyperspaceLogo from "../Assets/LogoHyperspace.png";
 import Homepage from "../Assets/Hyperspace/Homepage.png";
 import HomepageGuest from "../Assets/Hyperspace/Homepage-guest.png";
@@ -12,7 +13,7 @@ export default function Hyperspace() {
   return (
     <div className="">
       <Navbar />
-      <div className="text-start ms-5 mt-3 me-5">
+      <div className="text-start mt-3 ms-3 me-5">
         <div className="">
           <img
             src={HyperspaceLogo}
@@ -45,8 +46,9 @@ export default function Hyperspace() {
               <li>MongoDB</li>
             </ul>
           </div>
+
           <div className="mt-4">
-            <div className="fs-3 fw-bold">User Experience</div>
+            <div className="fs-3 fw-bold">UI/UX of the application</div>
             <p>
               Hyperspace provides a seamless and intuitive user experience.
               Users can easily create a thread (post), create a space
@@ -55,7 +57,7 @@ export default function Hyperspace() {
             </p>
 
             <div className="d-flex flex-column justify-content-center text-start w-100">
-              <div className="mb-3">
+              <div className="mb-3 ">
                 <img
                   src={Loginpage}
                   alt="..."
