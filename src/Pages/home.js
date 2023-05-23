@@ -2,12 +2,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Database from "../Assets/DBMS3.png";
 import ComputerNetwork from "../Assets/ComputerNetwork.jpg";
 import Scenery from "../Assets/Scenery.jpg";
 import LogoHyperspace from "../Assets/LogoHyperspace.png";
 import KpopZstation from "../Assets/KPOPZstation.png";
 import FigmaLogo from "../Assets/figma-logo-1.png";
+import VOGreensLogo from "../Assets/VOGreensLogo.png";
 
 import { Link } from "react-router-dom";
 import Footer from "../Components/Navbar/Footer";
@@ -94,7 +94,7 @@ export default function Homepage() {
           <div className="col">
             <div className="card h-100">
               <img
-                src={Database}
+                src={VOGreensLogo}
                 className="card-img-top"
                 alt="..."
                 style={{ height: "15rem", objectFit: "cover" }}

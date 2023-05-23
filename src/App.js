@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Homepage from "./Pages/home";
 import Hyperspace from "./Pages/hyperspace";
 import KPOPZstation from "./Pages/kpopzstation";
+import VOGreens from "./Pages/vogreens";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -14,9 +15,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/*" element={<Homepage />} />
           <Route path="/hyperspace" element={<Hyperspace />} />
           <Route path="/kpopzstation" element={<KPOPZstation />} />
+          <Route path="/vo-Greens" element={<VOGreens />} />
         </Routes>
       </Router>
     </div>
