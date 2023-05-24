@@ -7,8 +7,10 @@ import Homepage from "./Pages/home";
 import Hyperspace from "./Pages/hyperspace";
 import KPOPZstation from "./Pages/kpopzstation";
 import VOGreens from "./Pages/vogreens";
+import ComputerNetwork from "./Pages/ComputerNetwork";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import FigmaDesign from "./Pages/Figma";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/hyperspace" element={<Hyperspace />} />
           <Route path="/kpopzstation" element={<KPOPZstation />} />
           <Route path="/vo-Greens" element={<VOGreens />} />
+          <Route path="/computer-network" element={<ComputerNetwork />} />
+          <Route path="/figma-design" element={<FigmaDesign />} />
         </Routes>
       </Router>
     </div>
