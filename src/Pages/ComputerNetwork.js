@@ -31,7 +31,7 @@ export default function ComputerNetwork() {
             </p>
           </div>
 
-          <div>
+          <div className="mt-3">
             <div className="fs-3 fw-bold ">Additional information</div>
             <div>
               <p>
@@ -41,6 +41,22 @@ export default function ComputerNetwork() {
               </p>
               <a href="https://binusianorg-my.sharepoint.com/personal/hans_cupiterson_binus_ac_id/_layouts/15/guestaccess.aspx?guestaccesstoken=jf%2Fn0fYZhqt7uOIuGjT1EYjcv7lBOmyFu4sZbBlmWR4%3D&docid=2_0728e664a041b43e39f4bf890f9f13597&rev=1&e=Q2fDAz">
                 Computer Network Report
+              </a>
+            </div>
+
+            <div className="mt-4 fs-4 fw-semibold ">Cisco Packet Tracer</div>
+            <div>
+              <p>You can see our network configuration at:</p>
+              <a href="https://binusianorg-my.sharepoint.com/personal/hans_cupiterson_binus_ac_id/_layouts/15/guestaccess.aspx?guestaccesstoken=JaQuNddg90p01AQJ7kANyyeRRXrjKz9LmUYjczNILFA%3D&docid=2_09e29a533444942d4abf4119522b96519&rev=1&e=4NOh3m">
+                Network Configuration Cisco
+              </a>
+            </div>
+
+            <div className="mt-4 fs-4 fw-semibold ">Network Topology</div>
+            <div>
+              <p>You can also see our Network Topology, VLSM, device used at</p>
+              <a href="https://www.figma.com/file/SCMrWPrMKwXKQK44aJ8flX/LN01_Kelompok-5_AOL-Computer-Network?type=whiteboard&node-id=0%3A1&t=eOePsmcTLZCjcHkE-1">
+                Figma
               </a>
             </div>
           </div>
