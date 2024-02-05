@@ -1,0 +1,21 @@
+#skillview_skillcontainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+#skillview_container {
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #skillview_container {
+    width: 90%;
+  }
+}

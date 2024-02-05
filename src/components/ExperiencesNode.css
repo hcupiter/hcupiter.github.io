@@ -1,0 +1,36 @@
+.experiences_node_container {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.experiences_nodes_bar {
+  margin-right: 1rem;
+  background: #f00;
+  width: 0.5rem;
+  flex-shrink: 0;
+}
+
+.experiences_node_data {
+  flex-grow: 1;
+  padding-bottom: 2rem;
+}
+
+.experiences_node_year {
+  margin-bottom: 0.25rem;
+  color: #f24e1e;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.experiences_node_desc {
+  color: #fff;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}

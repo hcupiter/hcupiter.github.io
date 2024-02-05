@@ -1,0 +1,84 @@
+/* Navbar */
+#navbar {
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#profile_name_status_container {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#profile_name {
+  color: #d8d9da;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #d8d9da;
+  font-family: Inter;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+#profile_status {
+  color: #fff6e0;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 0.5rem;
+}
+
+#profile_status_container {
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+#navbar_profile {
+  display: flex;
+  align-items: center;
+}
+
+#profile_picture {
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+  border-radius: 5rem;
+  background: lightgray 50% / cover no-repeat;
+  object-fit: cover;
+}
+
+#navbar_navigation_controls > a {
+  color: #d8d9da;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+#navbar_navigation_controls > a:hover {
+  text-decoration: underline;
+}
+
+#navbar_navigation_controls > a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar_navigation_controls {
+    display: none;
+  }
+}

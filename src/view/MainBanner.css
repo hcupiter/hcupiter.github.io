@@ -1,0 +1,76 @@
+/* Main Banner */
+
+#main_banner {
+  margin-top: 5rem;
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+
+#main_banner > #hans_img_container {
+  width: 30rem;
+  height: 100%;
+}
+
+#main_banner > #hans_img_container > img {
+  object-fit: cover;
+  width: 20rem;
+  height: 22rem;
+  border-radius: 10px;
+  background: #e2e7f8 50% / contain no-repeat;
+  box-shadow: 0px 20px 25px 5px rgba(0, 0, 0, 0.25);
+}
+
+#main_banner_text_container {
+  margin-left: 5%;
+}
+
+#main_banner_intro {
+  color: #fff;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#main_banner_name {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.main_banner_jobs {
+  margin-top: 0.5rem;
+  color: #fff6e0;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#main_banner_desc {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.42);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #main_banner > #hans_img_container {
+    display: none;
+  }
+
+  #main_banner {
+    width: 90%;
+  }
+}
