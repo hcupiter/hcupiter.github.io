@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.01fcc861.css",
-    "main.js": "/static/js/main.cf798334.js",
+    "main.js": "/static/js/main.9064ed82.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
     "static/media/hans_mainpage.png": "/static/media/hans_mainpage.2a496afbd3c157baf743.png",
     "static/media/hans_linkedin.jpg": "/static/media/hans_linkedin.beaaf89b580a58877eff.jpg",
     "index.html": "/index.html",
     "main.01fcc861.css.map": "/static/css/main.01fcc861.css.map",
-    "main.cf798334.js.map": "/static/js/main.cf798334.js.map",
+    "main.9064ed82.js.map": "/static/js/main.9064ed82.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01fcc861.css",
-    "static/js/main.cf798334.js"
+    "static/js/main.9064ed82.js"
   ]
 }
