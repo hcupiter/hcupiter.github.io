@@ -12,10 +12,20 @@ code {
     monospace;
 }
 
-/* .card:hover {
-  background-color: #0d6efd;
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; /* Adjust the base font size for smaller screens */
+  }
 }
 
-.card:hover > * {
-  color: #fff;
-} */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 10px;
+  }
+}

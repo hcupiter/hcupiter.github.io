@@ -1,30 +1,24 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
-import "bootstrap/dist/js/bootstrap.bundle.min";
-// import Navbar from "./Components/Navbar/Navbar";
-import Homepage from "./Pages/home";
-import Hyperspace from "./Pages/hyperspace";
-import KPOPZstation from "./Pages/kpopzstation";
-import VOGreens from "./Pages/vogreens";
-import ComputerNetwork from "./Pages/ComputerNetwork";
-
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import FigmaDesign from "./Pages/Figma";
+import MainBanner from "./view/MainBanner";
+import Navbar from "./view/Navbar";
+import Experiences from "./view/Experiences";
+import SkillsView from "./view/SkillsView";
+import ProjectsView from "./view/ProjectsView";
+import ContactMeView from "./view/ContactMeView";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/*" element={<Homepage />} />
-          <Route path="/hyperspace" element={<Hyperspace />} />
-          <Route path="/kpopzstation" element={<KPOPZstation />} />
-          <Route path="/vo-Greens" element={<VOGreens />} />
-          <Route path="/computer-network" element={<ComputerNetwork />} />
-          <Route path="/figma-design" element={<FigmaDesign />} />
-        </Routes>
-      </Router>
+      <Navbar />
+      <MainBanner />
+      <Experiences />
+      <SkillsView />
+      <ProjectsView />
+      <a id="back_to_top_shortcut" href="main_banner">
+        Back to the top
+      </a>
+      <ContactMeView />
+
     </div>
   );
 }
