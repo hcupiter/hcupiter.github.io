@@ -13,16 +13,21 @@ function Experiences() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ ease: "easeIn", duration: 1 }}
       delay={delay}
-      viewport={{ once: true }} // only animate once when the component comes into vie
+      viewport={{ once: true }} // only animate once when the component comes into view
     >
-      <div class="segments_title">Experiences</div>
+      <div className="segments_title">Experiences</div>
       <motion.div
         id="experiences_container"
         transition={{ staggerChildren: 1 }}
       >
         <AnimatePresence>
           {experiencesData.map((exp) => (
-            <ExperiencesNode key={exp.index} year={exp.year} desc={exp.desc} />
+            <ExperiencesNode
+              key={exp.index}
+              index={exp.index}
+              year={exp.year}
+              desc={exp.desc}
+            />
           ))}
         </AnimatePresence>
       </motion.div>

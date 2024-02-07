@@ -2,7 +2,7 @@ import hans_mainpage from "../assets/hans_mainpage.png";
 import { IconButton } from "../components/IconButton";
 import "./MainBanner.css";
 import { motion } from "framer-motion";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 export default function MainBanner() {
@@ -19,6 +19,24 @@ export default function MainBanner() {
     ],
     []
   );
+
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  const handleClick = () => {
+    const targetElement = document.getElementById("contact_me_view_container");
+    if (targetElement) {
+      setIsScrolling(true);
+      targetElement.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => setIsScrolling(false), 1000);
+    }
+  };
+
+  const handleDownloadCvClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/10lO5GI3MBNG4c3SVspQbC-Q8xEEw-a4h/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   return (
     <motion.div
@@ -60,7 +78,21 @@ export default function MainBanner() {
           Jakarta, Indonesia. With a deep enthusiasm for technology, I thrive on
           continuous learning, exploring new horizons every day.
         </div>
-        <IconButton text={"Download CV"} icon={"material-symbols:download"} />
+        <IconButton
+          onClick={handleDownloadCvClick}
+          id={"button_download_cv"}
+          text={"Download CV"}
+          icon={"material-symbols:download"}
+          className={"icon_button_primary"}
+        />
+        <IconButton
+          id={"button_contact_me"}
+          text={"Contact Me"}
+          icon={"mdi:contact"}
+          className={"icon_button_secondary"}
+          onClick={handleClick}
+          disabled={isScrolling}
+        />
       </motion.div>
     </motion.div>
   );

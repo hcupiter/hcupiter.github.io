@@ -1,0 +1,27 @@
+#contact_me_view_container {
+  margin-top: 1rem;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  background: #272829;
+
+  justify-content: space-between;
+
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_me_title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 0.25rem;
+}

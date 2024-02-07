@@ -65,6 +65,14 @@
   margin-bottom: 1rem;
 }
 
+#button_contact_me {
+  display: none;
+}
+
+#button_download_cv {
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   #main_banner > #hans_img_container {
     display: none;
@@ -72,5 +80,10 @@
 
   #main_banner {
     width: 90%;
+  }
+
+  #button_contact_me {
+    display: flex;
+    margin-top: 1rem;
   }
 }

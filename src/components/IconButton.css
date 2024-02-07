@@ -2,29 +2,43 @@
   display: flex;
   align-items: center;
   filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.25));
+  flex-shrink: 0;
+  flex-basis: 12rem;
+  width: fit-content;
+
+  cursor: pointer;
 
   border-radius: 5px;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+.button_text {
+  outline: none;
+  background: none;
+  text-decoration: none;
+  border: none;
+}
+
+.icon_button_primary {
   background: #7b94e4;
-
-  width: 11.86rem;
-  height: 2.5rem;
-  flex-shrink: 0;
-
-  padding: 1rem;
 }
 
-.icon_button:hover {
-  background: #6f85cd;
+.icon_button_primary:hover {
+  background: #3e4a73;
 }
 
-.button_icon {
+.icon_button_primary > .button_icon {
   margin-right: 0.5rem;
   width: 1.65rem;
   height: 1.625rem;
   flex-shrink: 0;
+  margin-left: -1rem;
 }
 
-.button_text {
+.icon_button_primary > .button_text {
   color: #fff;
   text-align: center;
   font-family: Inter;
@@ -32,4 +46,38 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.icon_button_secondary {
+  border: 1px solid #7b94e4;
+}
+
+.icon_button_secondary:hover {
+  background: #3e4a73;
+}
+
+.icon_button_secondary > .button_icon {
+  color: #7b94e4;
+  margin-right: 0.5rem;
+  width: 1.65rem;
+  height: 1.625rem;
+  flex-shrink: 0;
+}
+
+.icon_button_secondary > .button_text {
+  color: #7b94e4;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.icon_button_secondary:hover > .button_icon {
+  color: #ffffff;
+}
+
+.icon_button_secondary:hover > .button_text {
+  color: #ffffff;
 }

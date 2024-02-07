@@ -1,10 +1,10 @@
 import "./ExperiencesNode.css";
 import { motion } from "framer-motion";
 
-function ExperiencesNode({ key, year, desc }) {
+function ExperiencesNode({ index, year, desc }) {
   return (
     <motion.div
-      key={key}
+      key={index}
       className="experiences_node_container"
       initial={{ opacity: 0, x: 10 }}
       whileInView={{ opacity: 1, x: 0 }}

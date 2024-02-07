@@ -31,8 +31,8 @@ export default function Navbar() {
       <div id="navbar_navigation_controls">
         <a href="#experiences_container">Experiences</a>
         <a href="#skillview_container">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#project_view_container">Projects</a>
+        <a href="#contact_me_view_container">Contacts</a>
       </div>
     </div>
   );

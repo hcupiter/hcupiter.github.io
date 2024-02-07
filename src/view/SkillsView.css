@@ -18,4 +18,8 @@
   #skillview_container {
     width: 90%;
   }
+
+  #skillview_skillcontainer {
+    justify-content: flex-start;
+  }
 }

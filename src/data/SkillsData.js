@@ -62,6 +62,27 @@ const SkillsData = [
     desc: "Crafting innovative and user-friendly mobile apps using Java and Android Studio",
     link: "https://en.wikipedia.org/wiki/Android_software_development",
   },
+  {
+    index: 10,
+    location: "/assets/logo/mysql.png",
+    title: "MySQL",
+    desc: "Widely used open source relational database management system (RDBMS) and runs on multiple operating systems",
+    link: "https://en.wikipedia.org/wiki/MySQL",
+  },
+  {
+    index: 11,
+    location: "/assets/logo/firebase.png",
+    title: "Firebase",
+    desc: "A collection of cloud-hosted backend development tools that provide two NoSQL real-time databases: Realtime Database and Cloud Firestore.",
+    link: "https://en.wikipedia.org/wiki/Firebase",
+  },
+  {
+    index: 12,
+    location: "/assets/logo/sqlite.png",
+    title: "SQLite",
+    desc: "A lightweight, embedded, and self-contained RDBMS that stores data in files and follows the SQL approach.",
+    link: "https://en.wikipedia.org/wiki/SQLite",
+  },
 ];
 
 export default SkillsData;

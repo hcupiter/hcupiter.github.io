@@ -12,7 +12,7 @@ function SkillsView() {
       transition={{ ease: "easeIn", duration: 1 }}
       delay={5}
     >
-      <div class="segments_title">Skills</div>
+      <div className="segments_title">Skills</div>
       <div id="skillview_skillcontainer">
         <AnimatePresence>
           {SkillsData.map((s) => (

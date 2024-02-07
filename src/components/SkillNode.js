@@ -9,7 +9,7 @@ function SkillNode({ skill }) {
       initial={{ opacity: 0, x: 5 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ ease: "easeIn", duration: 1 }}
-      delay={skill.key * 2}
+      delay={skill.index * 2}
       href={skill.link}
       target="_blank"
       rel="noopener noreferrer"

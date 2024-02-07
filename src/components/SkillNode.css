@@ -2,6 +2,7 @@
   width: 3.25rem;
   height: 3.25rem;
   margin-right: 1rem;
+  object-fit: contain;
 }
 
 .skill_node_container:hover {
