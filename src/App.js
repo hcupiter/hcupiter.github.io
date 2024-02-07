@@ -14,11 +14,10 @@ function App() {
       <Experiences />
       <SkillsView />
       <ProjectsView />
-      <a id="back_to_top_shortcut" href="main_banner">
+      <a id="back_to_top_shortcut" href="#main_banner">
         Back to the top
       </a>
       <ContactMeView />
-
     </div>
   );
 }
