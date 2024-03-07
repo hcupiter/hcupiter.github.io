@@ -1,0 +1,28 @@
+#projectSearchBar_container {
+  margin-bottom: 3rem;
+  width: 80%;
+  background-color: white;
+  border-radius: 2.5px;
+
+  padding: 7px;
+
+  display: flex;
+  align-items: center;
+}
+
+#ProjectSearchBar_icon {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+#projectSearchBar_inputField {
+  background: none;
+  border: none;
+  outline: none;
+
+  flex: 1;
+}
+
+#projectSearchBar_inputField:focus {
+  outline: none;
+}

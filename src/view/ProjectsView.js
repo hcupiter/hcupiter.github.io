@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { getListProject } from "../controller/DataFetcher.js";
 import ProjectNode from "../components/ProjectNode.js";
+import ProjectSearchBar from "../components/ProjectSearchBar.js";
+import DataFilterer from "../controller/DataFilterer.js";
 
 function ProjectsView() {
   const [projectData, setProjectData] = useState([]);
+  const [filteredProjectData, setFilteredProjectData] = useState([]);
   const [isDataRetrieved, setIsDataRetrieved] = useState(false);
 
   useEffect(() => {
@@ -13,11 +16,18 @@ function ProjectsView() {
     const fetchData = async () => {
       const datas = await getListProject();
       setProjectData(datas);
+      setFilteredProjectData(datas);
       setIsDataRetrieved(true);
     };
 
     fetchData();
   }, []);
+
+  const onUserSearchSomething = (event) => {
+    const filter = event.target.value;
+    const projectList = DataFilterer(projectData, filter);
+    setFilteredProjectData(projectList);
+  };
 
   return (
     <motion.div
@@ -28,9 +38,10 @@ function ProjectsView() {
       delay={6}
     >
       <div className="segments_title">Projects List</div>
+      <ProjectSearchBar onChange={onUserSearchSomething} />
       <div id="project_list_container">
         {isDataRetrieved ? (
-          projectData.map((project, index) => (
+          filteredProjectData.map((project, index) => (
             <ProjectNode key={index} data={project} />
           ))
         ) : (
