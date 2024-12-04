@@ -24,7 +24,7 @@ export default function ProjectNode({ data }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View on Github
+          View Details
         </a>
       </div>
     </motion.div>
